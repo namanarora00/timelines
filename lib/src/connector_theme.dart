@@ -82,14 +82,12 @@ class ConnectorThemeData with Diagnosticable {
   }
 
   @override
-  int get hashCode {
-    return hashValues(
-      color,
-      space,
-      thickness,
-      indent,
-    );
-  }
+  int get hashCode => Object.hash(
+        color,
+        thickness,
+        space,
+        indent,
+      );
 
   @override
   bool operator ==(Object other) {
